@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: $main-sc-purple;
+
+  &-text {
+    text-shadow: -2px 2px black;
+    color: $main-sc2-green;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
