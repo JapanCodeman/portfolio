@@ -1,0 +1,17 @@
+.pic-and-welcome-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 5vw;
+  color: $main-sc2-green;
+  text-shadow: -2px 2px $main-sc2-deep-green;
+  font-size: 7vw;
+  font-family: $signature-font;
+
+  .spacer-25px {
+    width: 25px;
+  }
+
+  .welcome-text {
+    align-self: center;
+  }
+}
