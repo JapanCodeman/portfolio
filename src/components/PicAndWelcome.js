@@ -1,9 +1,9 @@
-import React from 'react';
+import headshot from '../assets/images/headshot_bluecircle.png' 
 
 function PicAndWelcome() {
   return (
     <div className='pic-and-welcome-wrap'>
-      <img className='welcome-image' src='https://placehold.jp/250x25p.png' alt="placeholder" />
+      <img className='welcome-image' src={headshot} alt="placeholder" />
       <div className='spacer-25px' />
       <div className='welcome-text'>I'm Ryan. Take a look at some of my projects.</div>
     </div>

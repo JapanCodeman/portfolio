@@ -1,5 +1,66 @@
 .project-card-wrap {
-  width: 100vw;
-  background: rgb(40,169,92);
+  margin: 5vh 10vw;
+  background-color: transparent;
+  height: 20vh;
+  width: 80vw;
+  perspective: 1000px; 
+}
+
+.card-flip-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card-wrap:hover .card-flip-container {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: $signature-font;
+  border-radius: 25px;
   background: radial-gradient(circle, $main-sc2-green, $main-sc2-deep-green 100%);
-} 
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.project-title {
+  color: $main-sc-deep-purple;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: -1px 2px $main-pc-blue;
+  
+}
+
+.project-thumbnail-and-description-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+  img {
+    height: 50px;
+    border-radius: 10px;
+  }
+}
+
+.project-description {
+  margin-left: 20px;
+}
+
+.card-back {
+  color: white;
+  transform: rotateY(180deg);
+  background: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('../assets/images/tic-tac-toe.png');
+  background-size: contain;
+}
