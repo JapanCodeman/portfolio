@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 interface ProjectCardProps {
   title: string,
   description: string,
@@ -20,7 +22,7 @@ function ProjectCard({title, description, image, codeLink, visitLink}: ProjectCa
         
         <div className='card-back'>
           <div className='project-title-back'>{title}</div>
-          <a className='project-visit-link' href={visitLink}>Check out {title}</a>
+          <Link className='project-visit-link' to={visitLink}>Check out {title}</Link>
           <a className='project-code-link' href={codeLink}>Code</a>
         </div>
       </div>

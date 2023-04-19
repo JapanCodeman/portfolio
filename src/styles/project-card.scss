@@ -16,11 +16,11 @@
 }
 
 .project-card-wrap:hover .card-flip-container {
+  display: flex;
   transform: rotateY(180deg);
 }
 
 .card-front, .card-back {
-  display: flex;
   flex-direction: column;
   position: absolute;
   width: 100%;
@@ -36,17 +36,17 @@
 }
 
 .project-title {
-  color: $main-sc-deep-purple;
-  font-size: 24px;
+  // margin-top: 10px;
+  color: white;
+  font-size: 20px;
   font-weight: 700;
   text-shadow: -1px 2px $main-pc-blue;
-  
 }
 
 .project-thumbnail-and-description-wrap {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 0px 20px;
 
   img {
     height: 50px;
@@ -55,12 +55,22 @@
 }
 
 .project-description {
+  height: 50px;
+  margin-top: 10px;
   margin-left: 20px;
+  overflow-y: auto;
 }
 
 .card-back {
+  display: flex;
+  justify-content: space-around;
   color: white;
   transform: rotateY(180deg);
   background: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('../assets/images/tic-tac-toe.png');
   background-size: contain;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

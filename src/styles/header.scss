@@ -1,14 +1,37 @@
 .header {
+  position: relative;
   display: flex;
-  justify-content: center;
+  // flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   height: 50px;
 
   &-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-shadow: -2px 2px black;
-    color: $main-sc2-green;
+    color: white;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 700;
     font-size: 30px;
+  }
+
+  .back-button {
+    flex: 0 1 auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 20vw;
+    color: white;
+    background: radial-gradient(circle, $main-sc2-green, $main-sc2-deep-green 100%);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: $basic-box-shadow;
   }
 }

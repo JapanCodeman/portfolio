@@ -1,0 +1,15 @@
+.name-entry-wrap {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .name-entry-card {
+    height: 150px;
+    width: 80vw;
+    background: radial-gradient(circle, $main-sc2-green, $main-sc2-deep-green 100%);
+    border-radius: 25px;
+    box-shadow: $basic-box-shadow;
+  }
+}
